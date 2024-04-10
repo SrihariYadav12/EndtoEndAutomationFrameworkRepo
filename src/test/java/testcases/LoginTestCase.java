@@ -31,7 +31,7 @@ public class LoginTestCase extends BaseClass {
 	public void tearDown() {
 		getDriver().quit();
 	}
-
+//Datadriven
 	@Test(priority = 1, groups = { "Smoke", "Sanity",
 			"Regression" }, dataProvider = "LoginData", dataProviderClass = ReadExcelData.class)
 	public void successfulLogin(String userName, String password) {
