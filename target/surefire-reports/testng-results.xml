@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-08T20:47:06 IST" name="Suite" finished-at="2024-04-08T20:48:59 IST" duration-ms="112805">
+  <suite started-at="2024-04-10T21:35:03 IST" name="Suite" finished-at="2024-04-10T21:35:39 IST" duration-ms="36460">
     <groups>
       <group name="Sanity">
         <method signature="LoginTestCase.successfulLogin()[pri:1, instance:testcases.LoginTestCase@6580cfdd]" name="successfulLogin" class="testcases.LoginTestCase"/>
@@ -15,9 +15,9 @@
         <method signature="LoginTestCase.successfulLogin()[pri:1, instance:testcases.LoginTestCase@6580cfdd]" name="successfulLogin" class="testcases.LoginTestCase"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-08T20:47:06 IST" name="Test" finished-at="2024-04-08T20:48:59 IST" duration-ms="112805">
+    <test started-at="2024-04-10T21:35:03 IST" name="Test" finished-at="2024-04-10T21:35:39 IST" duration-ms="36460">
       <class name="testcases.LoginTestCase">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-08T20:47:06 IST" name="setUp" finished-at="2024-04-08T20:47:26 IST" duration-ms="20102" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-10T21:35:03 IST" name="setUp" finished-at="2024-04-10T21:35:18 IST" duration-ms="14753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,15 +28,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="successfulLogin()[pri:1, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-08T20:47:26 IST" name="successfulLogin" finished-at="2024-04-08T20:47:29 IST" duration-ms="2756" status="PASS">
+        <test-method signature="successfulLogin()[pri:1, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-10T21:35:18 IST" name="successfulLogin" finished-at="2024-04-10T21:35:21 IST" duration-ms="2803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-08T20:47:29 IST" name="tearDown" finished-at="2024-04-08T20:47:30 IST" duration-ms="420" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-10T21:35:21 IST" name="tearDown" finished-at="2024-04-10T21:35:21 IST" duration-ms="391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-08T20:47:30 IST" name="setUp" finished-at="2024-04-08T20:48:56 IST" duration-ms="86027" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-10T21:35:21 IST" name="setUp" finished-at="2024-04-10T21:35:36 IST" duration-ms="14550" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginwithInvalidpassword()[pri:2, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-08T20:48:56 IST" name="LoginwithInvalidpassword" finished-at="2024-04-08T20:48:58 IST" duration-ms="2667" status="PASS">
+        <test-method signature="LoginwithInvalidpassword()[pri:2, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-10T21:35:36 IST" name="LoginwithInvalidpassword" finished-at="2024-04-10T21:35:39 IST" duration-ms="2818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginwithInvalidpassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-08T20:48:58 IST" name="tearDown" finished-at="2024-04-08T20:48:59 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTestCase@6580cfdd]" started-at="2024-04-10T21:35:39 IST" name="tearDown" finished-at="2024-04-10T21:35:39 IST" duration-ms="418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

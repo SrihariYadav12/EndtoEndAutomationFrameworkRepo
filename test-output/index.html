@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Srihari\eclipse-workspace\orangeHrmFramework\testng_smoke.xml</span>
+                    <span>C:\Users\Srihari\eclipse-workspace\orangeHrmFramework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.LoginTestCase" class="method navigator-link" hash-for-method="successfulLogin">successfulLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.LoginTestCase" class="method navigator-link" hash-for-method="LoginwithInvalidpassword">LoginwithInvalidpassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.LoginTestCase" class="method navigator-link" hash-for-method="successfulLogin(Admin, admin123)">successfulLogin(Admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,9 +132,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="successfulLogin">
-                  </a> <!-- successfulLogin -->
+                  <a name="LoginwithInvalidpassword">
+                  </a> <!-- LoginwithInvalidpassword -->
+                  <span class="method-name">LoginwithInvalidpassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulLogin(Admin, admin123)">
+                  </a> <!-- successfulLogin(Admin, admin123) -->
                   <span class="method-name">successfulLogin</span>
+                  <span class="parameters">(Admin, admin123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +150,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Srihari\eclipse-workspace\orangeHrmFramework\testng_smoke.xml</span>
+            <span class="header-content">C:\Users\Srihari\eclipse-workspace\orangeHrmFramework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,19 +160,12 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utilities.MyListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SmokeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;Smoke&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.LoginTestCase&quot;/&gt;
-      &lt;class name=&quot;testcases.PIMAddEmployeeTest&quot;/&gt;
-      &lt;class name=&quot;testcases.NewAdminUserCreationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- SmokeTest --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +177,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SmokeTest (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,6 +198,10 @@
             <div class="test-group">
               <span class="test-group-name">Sanity</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginwithInvalidpassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">successfulLogin</span>
                 <br/>
@@ -221,16 +231,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'successfulLogin')
 data.setCell(0, 2, 'testcases.LoginTestCase')
-data.setCell(0, 3, 34532);
+data.setCell(0, 3, 2768);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginwithInvalidpassword')
+data.setCell(1, 2, 'testcases.LoginTestCase')
+data.setCell(1, 3, 2296);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -245,30 +259,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.LoginTestCase</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">LoginwithInvalidpassword</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.NewAdminUserCreationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createAdminUser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.PIMAddEmployeeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">addEmplyee</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -283,12 +276,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">successfulLogin</span>
-                <span class="method-start">8848 ms</span>
+                <span class="method-name">successfulLogin(Admin, admin123)</span>
+                <span class="method-start">9401 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43396 ms</span>
+                <span class="method-start">12173 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">12612 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginwithInvalidpassword</span>
+                <span class="method-start">21430 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23726 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
