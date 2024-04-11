@@ -39,6 +39,14 @@ public class MyListener implements ITestListener {
 	}
 
 	@Override
+	public void onTestSkipped(ITestResult result) {
+
+		extenttest.log(Status.INFO, result.getThrowable());
+		extenttest.log(Status.SKIP, result.getName() + " got skipped");
+
+	}
+
+	@Override
 	public void onTestFailure(ITestResult result) {
 		try {
 			extenttest.addScreenCaptureFromPath(BaseClass.captureScreenShot(testName));
