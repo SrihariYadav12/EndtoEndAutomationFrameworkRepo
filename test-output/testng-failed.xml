@@ -8,7 +8,7 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="successfulLogin"/>
-          <include name="LoginwithInvalidpassword"/>
+          <include name="loginWithInvalidPassword"/>
         </methods>
       </class> <!-- testcases.LoginTestCase -->
     </classes>

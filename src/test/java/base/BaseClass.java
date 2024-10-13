@@ -7,7 +7,9 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -63,15 +65,18 @@ public class BaseClass {
 	}
 
 	public static String captureScreenShot(String testName) throws Throwable {
+	    TakesScreenshot ts = (TakesScreenshot) getDriver();
+	    File source = ts.getScreenshotAs(OutputType.FILE);
 
-		TakesScreenshot ts = (TakesScreenshot) getDriver();
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "/Screenshots/" + testName + ".png";
-		File target = new File(path);
-		FileUtils.copyFile(source, target);
+	    // Create a timestamp
+	    String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+	    String screenshotName = testName + "_" + timeStamp + ".png";
+	    String path = System.getProperty("user.dir") + "/Screenshots/" + screenshotName;
+	    
+	    File target = new File(path);
+	    FileUtils.copyFile(source, target);
 
-		return path;
-
+	    return path;
 	}
 
 	public String randomestring() {

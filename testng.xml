@@ -8,8 +8,8 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="testcases.LoginTestCase" />
-			<!--class name="testcases.PIMAddEmployeeTest" /-->
-			<!--class name="testcases.NewAdminUserCreationTest" /-->
+			<class name="testcases.PIMAddEmployeeTest" />
+			<class name="testcases.NewAdminUserCreationTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

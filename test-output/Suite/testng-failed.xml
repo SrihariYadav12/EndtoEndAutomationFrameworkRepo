@@ -4,21 +4,22 @@
   <listeners>
     <listener class-name="utilities.MyListener"/>
   </listeners>
-  <test thread-count="5" name="SmokeTest(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
     <classes>
-      <class name="testcases.LoginTestCase">
+      <class name="testcases.NewAdminUserCreationTest">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="successfulLogin"/>
+          <include name="createAdminUser"/>
         </methods>
-      </class> <!-- testcases.LoginTestCase -->
+      </class> <!-- testcases.NewAdminUserCreationTest -->
+      <class name="testcases.PIMAddEmployeeTest">
+        <methods>
+          <include name="addEmployee"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.PIMAddEmployeeTest -->
     </classes>
-  </test> <!-- SmokeTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
