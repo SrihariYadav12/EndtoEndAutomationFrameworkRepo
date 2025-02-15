@@ -22,7 +22,7 @@ public class LoginPage extends BaseClass {
     @FindBy(xpath = "//p[contains(@class,'oxd-alert-content-text')]")
     private WebElement alertPopup;
 
-    public LoginPage() {
+    public LoginPage() { 
         PageFactory.initElements(getDriver(), this);
         logger.info("LoginPage initialized");
     }

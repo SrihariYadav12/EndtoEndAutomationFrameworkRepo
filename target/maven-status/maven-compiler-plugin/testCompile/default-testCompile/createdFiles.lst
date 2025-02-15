@@ -12,6 +12,7 @@ testcases\NewAdminUserCreationTest.class
 testcases\Maintainance.class
 testcases\PIMAddEmployeeTest.class
 pages\PIMAddEmployeePage.class
+utilities\ReadExcelData.class
 pages\AdminPage.class
 testcases\LoginTestCase.class
 pages\SystemUsersPage.class

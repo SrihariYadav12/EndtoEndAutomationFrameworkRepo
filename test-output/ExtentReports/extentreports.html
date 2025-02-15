@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Orange HRM Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">13-Oct-2024 12:52:56</span></a>
+<a href="#"><span class="badge badge-primary">15-Feb-2025 08:15:40</span></a>
 </li>
 </ul>
 </div>
@@ -76,6 +76,8 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -84,31 +86,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">Smoke</a><a class="dropdown-item" href="#">Regression</a>
+<a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">Smoke</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag="Sanity Regression Smoke"
           device="">
           <div class="test-detail">
             <p class="name">successfulLogin</p>
             <p class="text-sm">
-              <span>12:52:58 pm</span> / <span>00:00:00:043</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>8:16:09 pm</span> / <span>00:00:09:287</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">successfulLogin</h5>
-<span class='badge badge-success'>10.13.2024 12:52:58 pm</span>
-<span class='badge badge-danger'>10.13.2024 12:52:58 pm</span>
-<span class='badge badge-default'>00:00:00:043</span>
+<h5 class="test-status text-pass">successfulLogin</h5>
+<span class='badge badge-success'>02.15.2025 8:16:09 pm</span>
+<span class='badge badge-danger'>02.15.2025 8:16:18 pm</span>
+<span class='badge badge-default'>00:00:09:287</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -123,56 +125,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:52:58 pm</td>
+        <td>8:16:09 pm</td>
         <td>
           successfulLogin Test Execution started successfully
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:52:58 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:16:18 pm</td>
         <td>
-          <textarea readonly class="code-block">org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>12:52:58 pm</td>
-        <td>
-          successfulLogin got skipped
+          successfulLogin TestCase Passed
         </td>
       </tr>
   </tbody>
@@ -187,7 +149,7 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
           <div class="test-detail">
             <p class="name">loginWithInvalidPassword</p>
             <p class="text-sm">
-              <span>12:52:58 pm</span> / <span>00:00:00:010</span>
+              <span>8:16:36 pm</span> / <span>00:00:14:428</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -196,9 +158,9 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">loginWithInvalidPassword</h5>
-<span class='badge badge-success'>10.13.2024 12:52:58 pm</span>
-<span class='badge badge-danger'>10.13.2024 12:52:58 pm</span>
-<span class='badge badge-default'>00:00:00:010</span>
+<span class='badge badge-success'>02.15.2025 8:16:36 pm</span>
+<span class='badge badge-danger'>02.15.2025 8:16:51 pm</span>
+<span class='badge badge-default'>00:00:14:428</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -211,25 +173,28 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:52:58 pm</td>
+        <td>8:16:36 pm</td>
         <td>
           loginWithInvalidPassword Test Execution started successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:52:58 pm</td>
+        <td>8:16:51 pm</td>
         <td>
-          <textarea readonly class="code-block">org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+          <textarea readonly class="code-block">java.lang.AssertionError: Alert text did not match expected [Invalid credentialst] but found [Invalid credentials]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at testcases.LoginTestCase.loginWithInvalidPassword(LoginTestCase.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
@@ -258,9 +223,286 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
       </tr>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>12:52:58 pm</td>
+        <td>8:16:51 pm</td>
         <td>
           loginWithInvalidPassword got skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="3"
+          author=""
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginWithInvalidPassword</p>
+            <p class="text-sm">
+              <span>8:17:08 pm</span> / <span>00:00:29:904</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">loginWithInvalidPassword</h5>
+<span class='badge badge-success'>02.15.2025 8:17:08 pm</span>
+<span class='badge badge-danger'>02.15.2025 8:17:38 pm</span>
+<span class='badge badge-default'>00:00:29:904</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:08 pm</td>
+        <td>
+          loginWithInvalidPassword Test Execution started successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:38 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Alert text did not match expected [Invalid credentialst] but found [Invalid credentials]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at testcases.LoginTestCase.loginWithInvalidPassword(LoginTestCase.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>8:17:38 pm</td>
+        <td>
+          loginWithInvalidPassword got skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="4"
+          author=""
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginWithInvalidPassword</p>
+            <p class="text-sm">
+              <span>8:17:52 pm</span> / <span>00:00:25:708</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">loginWithInvalidPassword</h5>
+<span class='badge badge-success'>02.15.2025 8:17:52 pm</span>
+<span class='badge badge-danger'>02.15.2025 8:18:18 pm</span>
+<span class='badge badge-default'>00:00:25:708</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:17:52 pm</td>
+        <td>
+          loginWithInvalidPassword Test Execution started successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:18 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Alert text did not match expected [Invalid credentialst] but found [Invalid credentials]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at testcases.LoginTestCase.loginWithInvalidPassword(LoginTestCase.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>8:18:18 pm</td>
+        <td>
+          loginWithInvalidPassword got skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginWithInvalidPassword</p>
+            <p class="text-sm">
+              <span>8:18:47 pm</span> / <span>00:00:08:219</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">loginWithInvalidPassword</h5>
+<span class='badge badge-success'>02.15.2025 8:18:47 pm</span>
+<span class='badge badge-danger'>02.15.2025 8:18:55 pm</span>
+<span class='badge badge-default'>00:00:08:219</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Srihari\eclipse-workspace\orangeHrmFramework/Screenshots/loginWithInvalidPassword_20250215_201855.png' src="C:\Users\Srihari\eclipse-workspace\orangeHrmFramework/Screenshots/loginWithInvalidPassword_20250215_201855.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:47 pm</td>
+        <td>
+          loginWithInvalidPassword Test Execution started successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:18:55 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Alert text did not match expected [Invalid credentialst] but found [Invalid credentials]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at testcases.LoginTestCase.loginWithInvalidPassword(LoginTestCase.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:18:55 pm</td>
+        <td>
+          loginWithInvalidPassword TestCase Failed
         </td>
       </tr>
   </tbody>
@@ -288,15 +530,17 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>2</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
-<p class="name">org.testng.TestNGException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.testng.TestNGException</h4>
-<span status="skip" class='badge log badge-skip'>2 skipped</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -309,16 +553,30 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>12:52:58 pm</td>
+<td>20:16:36 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>successfulLogin</a>
+<a href="#" class="linked" test-id='2' id='2'>loginWithInvalidPassword</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>12:52:58 pm</td>
+<td>20:17:08 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>loginWithInvalidPassword</a>
+<a href="#" class="linked" test-id='3' id='3'>loginWithInvalidPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>20:17:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>loginWithInvalidPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:18:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>loginWithInvalidPassword</a>
 </td>
 </tr>
 </tbody>
@@ -344,80 +602,7 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>2</span>
-</span>
-<p class="name">Sanity</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>Sanity</h4>
-<span status="skip" class='badge log badge-skip'>2 skipped</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>12:52:58 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>successfulLogin</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>12:52:58 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>loginWithInvalidPassword</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-skip'>1</span>
-</span>
-<p class="name">Smoke</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>Smoke</h4>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>12:52:58 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>successfulLogin</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-skip'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">Regression</p>
 <p class="duration text-sm">1 tests</p>
@@ -425,7 +610,7 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 <div class="test-contents d-none">
 <div class="info">
 <h4>Regression</h4>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -436,9 +621,107 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 </tr>
 </thead>
 <tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:16:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>successfulLogin</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
+</span>
+<p class="name">Sanity</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:16:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>successfulLogin</a>
+</td>
+</tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>12:52:58 pm</td>
+<td>20:16:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>loginWithInvalidPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>20:17:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>loginWithInvalidPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>20:17:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>loginWithInvalidPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:18:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>loginWithInvalidPassword</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:16:09 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>successfulLogin</a>
 </td>
@@ -460,25 +743,25 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>13-Oct-2024 12:52:56</h3>
+<h3>15-Feb-2025 08:15:40</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>13-Oct-2024 12:52:58</h3>
+<h3>15-Feb-2025 08:18:56</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -494,13 +777,13 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='20%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='20%'><b>1</b> tests failed,
+<b>3</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -517,10 +800,10 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='7%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>6</b> others
+<small data-tooltip='7%'><b>1</b> events failed,
+<b data-tooltip='%'>12</b> others
 </small>
 </div>
 </div>
@@ -536,7 +819,7 @@ in C:\Users\Srihari\AppData\Local\Temp\testng-eclipse--2092234742\testng-customs
 </div></div>
 <script>
 var timeline = {
-"successfulLogin":0.043,"loginWithInvalidPassword":0.01
+"successfulLogin":9.287,"loginWithInvalidPassword":14.428,"loginWithInvalidPassword":29.904,"loginWithInvalidPassword":25.708,"loginWithInvalidPassword":8.219
 };
 </script>
 <div class="row">
@@ -546,28 +829,28 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>Regression</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>Sanity</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
 <td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0%</td>
+<td>20%</td>
 </tr>
 <tr>
 <td>Smoke</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>Regression</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -608,10 +891,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 0,
+passParent: 1,
+failParent: 1,
 warningParent: 0,
-skipParent: 2,
+skipParent: 3,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -625,11 +908,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 0,
+passEvents: 1,
+failEvents: 1,
 warningEvents: 0,
-skipEvents: 2,
-infoEvents: 4
+skipEvents: 3,
+infoEvents: 9
 };
 </script>        </div>
       </div>

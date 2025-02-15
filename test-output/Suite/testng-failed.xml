@@ -3,23 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="utilities.MyListener"/>
+    <listener class-name="utilities.MyAnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testcases.NewAdminUserCreationTest">
+      <class name="testcases.LoginTestCase">
         <methods>
           <include name="setUp"/>
-          <include name="createAdminUser"/>
-        </methods>
-      </class> <!-- testcases.NewAdminUserCreationTest -->
-      <class name="testcases.PIMAddEmployeeTest">
-        <methods>
-          <include name="addEmployee"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="loginWithInvalidPassword"/>
         </methods>
-      </class> <!-- testcases.PIMAddEmployeeTest -->
+      </class> <!-- testcases.LoginTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
